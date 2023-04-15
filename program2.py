@@ -61,6 +61,7 @@ def generate_initial_population(population_size=500):
                 "time": time,
                 "facilitator": facilitator
             }
+            
         # Append the generated schedule to the population list
         population.append(schedule)
 
@@ -161,7 +162,8 @@ def calculate_fitness(schedule):
 
         # Score calculated for the activity is added to the overall fitness score for the schedule.
         fitness += activity_fitness
-
+        # Jump to start of loop
+        
     # Add constraints specific to SLA101 and SLA191 courses
     # The 2 sections of SLA 101 are more than 4 hours apart: + 0.5
     if abs(sla_101_sections[0][0] - sla_101_sections[1][0]) > 4:
@@ -239,8 +241,7 @@ def genetic_algorithm(population, mutation_rate=0.01):
     best_schedule_index = np.argmax(fitness_scores)
     return population[best_schedule_index]
 
-# The mutation rate is dynamically adjusted based on the
-# history of fitness scores to balance exploration and exploitation of the search space.
+# The mutation rate is dynamically adjusted based on the history of fitness scores
 def adaptive_genetic_algorithm(population, initial_mutation_rate=0.01):
     mutation_rate = initial_mutation_rate
     previous_best_fitness = -np.inf
@@ -250,7 +251,7 @@ def adaptive_genetic_algorithm(population, initial_mutation_rate=0.01):
         current_best_schedule = genetic_algorithm(population, mutation_rate)
         current_best_fitness = calculate_fitness(current_best_schedule)
 
-        # If the fitness is not improving significantly, break the loop
+        # If the fitness is not improving by atleast 1%, break the loop
         if current_best_fitness <= previous_best_fitness * (1 + 0.01):
             break
 
