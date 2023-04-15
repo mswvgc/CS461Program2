@@ -20,6 +20,7 @@ rooms = {
     "Logos 325": {"capacity": 450, "building": "Logos"},
     "Frank 119": {"capacity": 60, "building": "Frank"}
 }
+
 # Define the available time slots within a set
 times = [10,11,12,1,2,3]
 
