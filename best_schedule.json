@@ -1,0 +1,57 @@
+{
+    "SLA101A": {
+        "room": "Loft 206",
+        "time": 12,
+        "facilitator": "Shaw"
+    },
+    "SLA101B": {
+        "room": "Loft 206",
+        "time": 3,
+        "facilitator": "Numen"
+    },
+    "SLA191A": {
+        "room": "Roman 201",
+        "time": 11,
+        "facilitator": "Shaw"
+    },
+    "SLA191B": {
+        "room": "Loft 310",
+        "time": 10,
+        "facilitator": "Zeldin"
+    },
+    "SLA201": {
+        "room": "Roman 201",
+        "time": 12,
+        "facilitator": "Singer"
+    },
+    "SLA291": {
+        "room": "Frank 119",
+        "time": 10,
+        "facilitator": "Shaw"
+    },
+    "SLA303": {
+        "room": "Beach 301",
+        "time": 1,
+        "facilitator": "Numen"
+    },
+    "SLA304": {
+        "room": "Beach 301",
+        "time": 2,
+        "facilitator": "Uther"
+    },
+    "SLA394": {
+        "room": "Beach 201",
+        "time": 11,
+        "facilitator": "Richards"
+    },
+    "SLA449": {
+        "room": "Beach 201",
+        "time": 12,
+        "facilitator": "Numen"
+    },
+    "SLA451": {
+        "room": "Loft 310",
+        "time": 11,
+        "facilitator": "Numen"
+    }
+}
